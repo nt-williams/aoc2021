@@ -2,3 +2,6 @@ name = "aoc2021"
 uuid = "7ae6fbd5-7705-4da0-b415-cf23722bd76c"
 authors = ["Nick Williams <ntwilliams.personal@gmail.com>"]
 version = "0.1.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
