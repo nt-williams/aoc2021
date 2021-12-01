@@ -21,5 +21,7 @@ function readInput(day::Integer)
 end
 
 export readInput
+export day01a
+export day01b
 
 end
