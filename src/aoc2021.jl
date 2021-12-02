@@ -23,5 +23,6 @@ end
 export readInput
 export day01a
 export day01b
+export day02
 
 end
