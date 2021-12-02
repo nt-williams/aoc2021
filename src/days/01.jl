@@ -27,8 +27,8 @@ using aoc2021
 #
 # To do this, count the number of times a depth measurement increases from the previous measurement. 
 # (There is no measurement before the first measurement.) In the example above, the changes are as follows:
-day01a = function()
-    input = parse.(Int64, split(readInput(1), "\n"))
+day01a = function(input::String = readInput(1))
+    input = parse.(Int64, split(input))
     count_increases(input)
 end
 
@@ -69,8 +69,8 @@ end
 #
 # Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
 # Instead, consider sums of a three-measurement sliding window.
-day01b = function()
-    input = parse.(Int64, split(readInput(1), "\n"))
+day01b = function(input::String = readInput(1))
+    input = parse.(Int64, split(input))
     sets = [(input[x], input[x + 1], input[x + 2]) for x in 1:length(input) if x + 2 <= length(input)]
     input = sum.(sets)
     count_increases(input)
